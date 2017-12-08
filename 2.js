@@ -6,9 +6,8 @@ const input = fs.readFileSync('./2.txt', {encoding: 'utf8'});
 const matrix = input.split('\n')
     .map(row => row.split('\t').map(val => Number(val)));
 
-const res1 = matrix.map(row => minmaxDiff(row)).reduce((acc, val) => {
-    return acc + val;
-});
+const res1 = matrix.map(row => minmaxDiff(row))
+    .reduce((acc, val) => acc + val);
 
 function minmaxDiff(arr) {
     let min = arr[0];
@@ -22,9 +21,8 @@ function minmaxDiff(arr) {
     return max - min;
 }
 
-const res2 = matrix.map(row => evenlyDevisible(row)).reduce((acc, val) => {
-    return acc + val;
-});
+const res2 = matrix.map(row => evenlyDevisible(row))
+    .reduce((acc, val) => acc + val);
 
 function evenlyDevisible(arr) {
     let res = 0;
