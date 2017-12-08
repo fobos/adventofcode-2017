@@ -1,0 +1,11 @@
+{
+  "name": "adventofcode-2017",
+  "version": "1.0.0",
+  "description": "Adventofcode-2017 tasks solving",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Biryukov",
+  "license": "MIT"
+}
